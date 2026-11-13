@@ -21,7 +21,7 @@ th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-ali
 <body>
 <main>
 <h1>Politique de confidentialité de Hé Cop</h1>
-<p class="lead">Dernière mise à jour : 12 novembre 2026. Hé Cop est une application de navigation et d'entraide pour motards et automobilistes. Elle est financée par de la publicité (Google AdMob), jamais pendant un guidage. Hé Cop ne vend aucune donnée.</p>
+<p class="lead">Dernière mise à jour : 13 novembre 2026. Hé Cop est une application de navigation et d'entraide pour motards et automobilistes. Elle est financée par de la publicité (Google AdMob), jamais pendant un guidage. Hé Cop ne vend aucune donnée.</p>
 
 <h2>Qui est responsable de vos données</h2>
 <div class="box">
@@ -40,6 +40,7 @@ th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-ali
 <tr><td>Pseudo, code ami, liste d'amis</td><td>Retrouver vos amis et les inviter à une sortie</td><td>Supabase (UE)</td></tr>
 <tr><td>Signalements : type de danger, position, direction, heure</td><td>Prévenir les autres membres ; vos votes « toujours présent / n'est plus là »</td><td>Supabase (UE) ; visibles des autres membres sans votre adresse e-mail</td></tr>
 <tr><td>Sorties en groupe : titre, description, date, point de rendez-vous, circuit, participants</td><td>Organiser une sortie ; le rendez-vous et le circuit ne sont montrés qu'aux participants acceptés</td><td>Supabase (UE)</td></tr>
+<tr><td>Si vous activez « Être visible des coppeurs » : pseudo, grade et secteur (position arrondie à environ 500 m, jamais la position exacte)</td><td>Voir les autres membres visibles autour de vous et être vu d'eux ; désactivable à tout moment</td><td>Supabase (UE) ; visibles des autres coppeurs visibles</td></tr>
 <tr><td>Niveau et points</td><td>Votre progression dans la communauté</td><td>Supabase (UE)</td></tr>
 <tr><td>Départ, étapes, destination et position pendant le guidage</td><td>Calculer l'itinéraire, le recalculer, éviter les bouchons</td><td>Serveur Hé Cop chez OVH (France). Le trafic est demandé à TomTom pour le tracé, sans votre identité.</td></tr>
 <tr><td>Texte d'un signalement écrit ou dicté</td><td>Comprendre le danger décrit</td><td>Serveur Hé Cop (France), qui transmet le texte seul à OpenAI (États-Unis) pour l'analyse, sans votre identité ni votre position</td></tr>
@@ -47,6 +48,7 @@ th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-ali
 <tr><td>Zone de la carte affichée</td><td>Afficher la carte et les lieux utiles (stations, garages…)</td><td>OpenStreetMap et serveurs Overpass</td></tr>
 <tr><td>Position approximative</td><td>Météo sur votre trajet</td><td>Institut météorologique norvégien (api.met.no)</td></tr>
 <tr><td>Votre voix, quand vous appuyez sur le micro ou dites « Hé Cop »</td><td>Commandes vocales et signalements à la voix</td><td>Service de reconnaissance vocale d'Android sur votre téléphone ; Hé Cop n'enregistre pas l'audio</td></tr>
+<tr><td>Rapports techniques anonymes : type d'incident (plantage, carte 3D, blocage), fluidité et batterie pendant un guidage, version de l'appli, modèle du téléphone et version d'Android, avec un identifiant aléatoire propre à l'installation. Jamais de position, de trajet, de compte ni de texte saisi.</td><td>Repérer et corriger les problèmes. Désactivables dans Réglages › Confidentialité.</td><td>Supabase (UE)</td></tr>
 </table></div>
 <p>Les transferts hors de l'Union européenne (OpenAI, Google, y compris Google AdMob) reposent sur les garanties prévues par le RGPD (clauses contractuelles types ou cadre de protection des données UE–États-Unis).</p>
 
@@ -60,6 +62,8 @@ th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-ali
 <ul>
 <li><strong>Position</strong> : guidage, signalements, alertes sur la route. Pendant un guidage, une notification indique que le GPS reste actif écran éteint.</li>
 <li><strong>Micro</strong> : uniquement pour les commandes vocales que vous déclenchez.</li>
+<li><strong>Accès aux notifications</strong> (facultatif) : seulement pour afficher le titre, l'artiste et la pochette de la musique en cours dans le mini-lecteur. Hé Cop ne lit pas vos messages ni vos autres notifications, et rien ne quitte le téléphone.</li>
+<li><strong>Contacts et téléphone</strong> : seulement si vous dites « appelle… » : Hé Cop cherche le nom dans les contacts de votre téléphone et lance l'appel. Vos contacts ne quittent jamais le téléphone.</li>
 <li><strong>Notifications</strong> : guidage en cours et nouveaux signalements près de vous (désactivables).</li>
 </ul>
 
